@@ -28,9 +28,6 @@
   padding: 1rem;
 }
 
-.section-interactivo {
-}
-
 .div-interactivo {
   display: flex;
   justify-content: space-between;
@@ -41,15 +38,22 @@
 
 .div-dia {
   display: flex;
+  justify-content: flex-start;
   height: 500px;
   width: 100%;
   flex-direction: column;
   background-color: #222;
   border: 1px solid #222;
   padding: 1rem;
-  justify-content: center;
   border-radius: 5px;
   margin-right: 10px;
+}
+
+.horizontal-line {
+  display: block;
+  border-top: 1px solid white;
+  margin: 10px 0 5px 0;
+  width: 100%;
 }
 
 .imagenes {

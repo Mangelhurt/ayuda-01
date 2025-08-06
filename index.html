@@ -35,7 +35,12 @@
       <section class="section-interactivo">
         <div class="div-interactivo">
           <div class="div-dia">
-            <h2>Tecnologias de mi día a día</h2>
+            <div style="width: 100%; display: flex; align-items: flex-start">
+              <h2>Tecnologias de mi día a día</h2>
+            </div>
+
+            <div class="horizontal-line">&nbsp;</div>
+
             <figure class="imagenes">
               <img src="assets/1.png" alt="javaScript" />
               <img src="assets/2.png" alt="lol" />
@@ -43,8 +48,35 @@
             </figure>
           </div>
           <div class="div-imputs">
-            <h2>Cuentame de tus Hobbies</h2>
-            <input type="text" />
+            <form action="/submit" method="post">
+              <label for="titulo">Título:</label><br />
+              <input
+                type="text"
+                id="titulo"
+                name="titulo"
+                required
+              /><br /><br />
+
+              <label for="descripcion">Descripción:</label><br />
+              <textarea
+                id="descripcion"
+                name="descripcion"
+                rows="4"
+                cols="50"
+                required
+              ></textarea
+              ><br /><br />
+
+              <label for="imagen">URL de la Imagen:</label><br />
+              <input
+                type="url"
+                id="imagen"
+                name="imagen"
+                required
+              /><br /><br />
+
+              <button type="submit">Enviar</button>
+            </form>
           </div>
         </div>
       </section>
